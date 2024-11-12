@@ -26,22 +26,22 @@
         <tbody></tbody>
     </table>
     <dialog id="formModal">
-        <button type="button" id="closeModal"><img src="ico-close.svg" alt=""></button>
+        <button type="button" id="closeModal" formmethod="dialog"><img src="ico-close.svg" alt=""></button>
         <form action="">
             <h2>Add a book</h2>
             <div>
                 <label for="bookTitle">Title:</label>
-                <input type="text" name="Book Title" id="bookTitle" placeholder="Rendezvous with Rama" autofocus>
+                <input type="text" name="Book Title" id="bookTitle" placeholder="The Hobbit" autofocus>
             </div>
 
             <div>
                 <label for="bookAuthor">Author:</label>
-                <input type="text" name="Book Author" id="bookAuthor" placeholder="Arthur C. Clarke">
+                <input type="text" name="Book Author" id="bookAuthor" placeholder="J.R.R. Tolkien">
             </div>
 
             <div>
                 <label for="bookPages">Pages:</label>
-                <input type="number" name="Book pages" id="bookPages" placeholder="243">
+                <input type="number" name="Book pages" id="bookPages" placeholder="310">
             </div>
 
             <div class="row">
@@ -49,9 +49,9 @@
                 <label for="bookRead">Mark as read</label>
             </div>
 
-            <button type="submit" class="btn span">Add</button>
+            <button type="submit" id="formSubmit" class="btn span">Add</button>
         </form>
-    </dialog>  
+    </dialog>
 </body>
 
 </html>
