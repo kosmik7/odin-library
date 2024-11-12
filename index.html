@@ -12,6 +12,7 @@
 <body>
     <header>
         <h1>My Library</h1>
+        <button id="openModal" class="btn"><img src="ico-plus.svg" alt="">Add book</button>
     </header>
     <table id="bookTable">
         <thead>
@@ -22,10 +23,35 @@
                 <th scope="col">Read</th>
             </tr>
         </thead>
-        <tbody>
-
-        </tbody>
+        <tbody></tbody>
     </table>
+    <dialog id="formModal">
+        <button type="button" id="closeModal"><img src="ico-close.svg" alt=""></button>
+        <form action="">
+            <h2>Add a book</h2>
+            <div>
+                <label for="bookTitle">Title:</label>
+                <input type="text" name="Book Title" id="bookTitle" placeholder="Rendezvous with Rama" autofocus>
+            </div>
+
+            <div>
+                <label for="bookAuthor">Author:</label>
+                <input type="text" name="Book Author" id="bookAuthor" placeholder="Arthur C. Clarke">
+            </div>
+
+            <div>
+                <label for="bookPages">Pages:</label>
+                <input type="number" name="Book pages" id="bookPages" placeholder="243">
+            </div>
+
+            <div class="row">
+                <input type="checkbox" name="Book read status" id="bookRead">
+                <label for="bookRead">Mark as read</label>
+            </div>
+
+            <button type="submit" class="btn span">Add</button>
+        </form>
+    </dialog>  
 </body>
 
 </html>

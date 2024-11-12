@@ -39,6 +39,19 @@ function displayBooks() {
 
 }
 
+const modal = document.getElementById("formModal");
+const modalShowBtn = document.getElementById("openModal");
+const modalCloseBtn = document.getElementById("closeModal");
+
+modalShowBtn.addEventListener("click", () => {
+    modal.showModal();
+});
+
+modalCloseBtn.addEventListener("click", () => {
+    modal.close();
+});
+
+
 addBookToLibrary("Rendezvous with Rama", "Arthur C. Clarke", 243, true);
 addBookToLibrary("The Hobbit", "J.R.R. Tolkien", 310, false);
 addBookToLibrary("Hyperion", "Dan Simmons", 500, true);
