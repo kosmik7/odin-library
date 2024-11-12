@@ -14,21 +14,24 @@
         <h1>My Library</h1>
         <button id="openModal" class="btn"><img src="ico-plus.svg" alt="">Add book</button>
     </header>
-    <table id="bookTable">
-        <thead>
-            <tr>
-                <th scope="col">Title</th>
-                <th scope="col">Author</th>
-                <th scope="col">Pages</th>
-                <th scope="col">Read</th>
-            </tr>
-        </thead>
-        <tbody></tbody>
-    </table>
+    <div class="table-wrapper">
+        <table id="bookTable">
+            <thead>
+                <tr>
+                    <th scope="col">Title</th>
+                    <th scope="col">Author</th>
+                    <th scope="col">Pages</th>
+                    <th scope="col">Read</th>
+                    <th scope="col">Actions</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
     <dialog id="formModal">
         <button type="button" id="closeModal" formmethod="dialog"><img src="ico-close.svg" alt=""></button>
         <form action="">
-            <h2>Add a book</h2>
+            <h2 id="formHeader">Add a book</h2>
             <div>
                 <label for="bookTitle">Title:</label>
                 <input type="text" name="Book Title" id="bookTitle" placeholder="The Hobbit" autofocus>

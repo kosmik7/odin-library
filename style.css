@@ -144,12 +144,17 @@ header button img {
 }
 
 /* library */
-table {
+.table-wrapper {
     width: min(100%, 48rem);
     margin: auto;
+    border: 1px solid rgba(0, 0, 0, 0.04);
     background-color: #e6e9ef;
     border-radius: .5rem;
     overflow: hidden;
+}
+
+table {
+    width: 100%;
 }
 
 th,
@@ -159,11 +164,16 @@ td {
 
 thead > tr {
     background-color: #dce0e8;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.04);
     text-align: left;
 }
 
 tbody > tr:nth-of-type(even) {
     background-color: #e1e5ec;
+}
+
+tr {
+    position:relative
 }
 
 td > input[type="checkbox"] {
@@ -172,6 +182,12 @@ td > input[type="checkbox"] {
 }
 td > input[type="checkbox"]:hover {
     transform: scale(1.25) translateY(.03em);
+}
+
+td > button  {
+    cursor: pointer;
+    border: none;
+    background: none;
 }
 
 /* modal */
@@ -254,4 +270,8 @@ input#bookRead {
 
 input#bookPages {
     width: 16ch;
+}
+
+#formEdit {
+    display: none;
 }
