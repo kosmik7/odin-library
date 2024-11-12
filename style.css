@@ -86,3 +86,51 @@ th {
 }
 
 /*! minireset.css end */
+body {
+    padding: 0 1.5rem;
+    background-color: #eff1f5;
+    color: #4c4f69;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+header {
+    display: flex;
+    width: min(100%, 48rem);
+    margin: 3rem auto 1.5rem;
+    padding: 0 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+table {
+    width: min(100%, 48rem);
+    margin: auto;
+    background-color: #e6e9ef;
+    border-radius: .5rem;
+    overflow: hidden;
+}
+
+th,
+td {
+    padding: .85rem 1.5rem ;
+}
+
+thead > tr {
+    background-color: #dce0e8;
+    text-align: left;
+}
+
+tbody > tr:nth-of-type(even) {
+    background-color: #e1e5ec;
+}
+
+td > input[type="checkbox"] {
+    accent-color: #40a02b;
+    transform: scale(1.25) translateY(.03em);
+}
